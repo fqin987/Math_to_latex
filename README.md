@@ -1,10 +1,7 @@
-# Handwritten-Mathematical-Expression-Recognition (Pytorch)
+# Math_to_latex
 
-
-**2019/8/13 README.md has been sorted out and you can see the previous version in version_before.md.**  
   
-This program uses Attention and Coverage to realize **HMER** (HandWritten Mathematical Expression Recognition) and written by **Hongyu Wang** refer to Dr. Jianshu Zhang. Any discussion and questions are welcome to contact me (why0706@buaa.edu.cn).
-
+This program is written by Frederick Qin, Jarred Allen, Ashkong Aghassi, and Fatuma Omer for CS121 at Harvey Mudd College and uses Attention and Coveragefor **HMER** (HandWritten Mathematical Expression Recognition) and work from **Hongyu Wang** refer to Dr. Jianshu Zhang.
 
 # Requirements
 
