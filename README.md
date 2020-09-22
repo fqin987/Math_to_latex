@@ -1,7 +1,7 @@
 # Math_to_latex
 
   
-This program is written by Frederick Qin, Jarred Allen, Ashkon Aghassi, and Fatuma Omer for CS121 at Harvey Mudd College and uses Attention and Coveragefor **HMER** (HandWritten Mathematical Expression Recognition) and work from **Hongyu Wang** refer to Dr. Jianshu Zhang.
+This program is written by Frederick Qin, Jarred Allen, Ashkon Aghassi and Fatuma Omer for CS121 at Harvey Mudd College and uses Attention and Coveragefor **HMER** (HandWritten Mathematical Expression Recognition) and work from Hongyu Wang - refer to Dr. Jianshu Zhang.
 
 # Requirements
 
@@ -23,20 +23,22 @@ This program is written by Frederick Qin, Jarred Allen, Ashkon Aghassi, and Fatu
 
 + > WER loss: **17.160%**  
  ExpRate: **38.595%**  
-
+<!---
 + The HMER V2.0
 ![avatar](http://m.qpic.cn/psb?/V13MmUWH1KBoey/j8PBopZLNdZnNvCyyZRSPK.RWzFieO420uMgrUjEHtI!/b/dFIBAAAAAAAA&bo=iQNCAokDQgICOR0!&rf=viewer_4)
-+ Visualization of results  
-
++ Visualization of results--->
+<!---
 ![avatar](http://r.photo.store.qq.com/psb?/V13MmUWH1KBoey/DpjTkIdquQo7zYbletKcv*EEPXZWipzxQuSiU53cw24!/r/dEcBAAAAAAAA)
 ![avatar](http://r.photo.store.qq.com/psb?/V13MmUWH1KBoey/Se*yEixUuODmf.g9J9ViJm85cWk7QwM6jEVij87cUxc!/r/dL4AAAAAAAAA)
-
-+ Visualization of Attention
-
+--->
+<!---
++ Visualization of Attention--->
+<!---
 **Input image**  
-![avatar](http://r.photo.store.qq.com/psb?/V13MmUWH1KBoey/1gc6vVDYrdNOwnYHhft3kMm0UjBQV8*sVxzaoOUixqY!/r/dL8AAAAAAAAA) 
-
+![avatar](http://r.photo.store.qq.com/psb?/V13MmUWH1KBoey/1gc6vVDYrdNOwnYHhft3kMm0UjBQV8*sVxzaoOUixqY!/r/dL8AAAAAAAAA) --->
+<!---
 **step by step**  
 ![avatar](http://m.qpic.cn/psb?/V13MmUWH1KBoey/Fv78zebr.kLV.TcsPurlB.LIhDE1t2GnDHcFm3vmYus!/b/dL8AAAAAAAAA&bo=TQIZAQAAAAADF2U!&rf=viewer_4)
 ![avatar](http://m.qpic.cn/psb?/V13MmUWH1KBoey/SDhLdfFBYFbZMsxUTTYFmuNHC6LxihjADY0QMog54.k!/b/dFQBAAAAAAAA&bo=TwIhAQAAAAADF18!&rf=viewer_4)
 ![avatar](http://m.qpic.cn/psb?/V13MmUWH1KBoey/plPANWRYY*0c3hAccSGMgtefee1hRMTUa.h*sYFoXEI!/b/dFIBAAAAAAAA&bo=UwIfAQAAAAADF30!&rf=viewer_4)
+--->
