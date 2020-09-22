@@ -1,7 +1,7 @@
 # Math_to_latex
 
   
-This program is written by Frederick Qin, Jarred Allen, Ashkong Aghassi, and Fatuma Omer for CS121 at Harvey Mudd College and uses Attention and Coveragefor **HMER** (HandWritten Mathematical Expression Recognition) and work from **Hongyu Wang** refer to Dr. Jianshu Zhang.
+This program is written by Frederick Qin, Jarred Allen, Ashkon Aghassi, and Fatuma Omer for CS121 at Harvey Mudd College and uses Attention and Coveragefor **HMER** (HandWritten Mathematical Expression Recognition) and work from **Hongyu Wang** refer to Dr. Jianshu Zhang.
 
 # Requirements
 
