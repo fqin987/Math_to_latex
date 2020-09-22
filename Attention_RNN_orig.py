@@ -49,8 +49,8 @@ class AttnDecoderRNN(nn.Module):
         # batch_gpu = int(batch_size/len(gpu))
         batch_gpu = int(batch_size/1)
 
-        et_mask = torch.zeros(batch_gpu,dense_input,bb).cuda()
-#         et_mask = torch.zeros(batch_gpu,dense_input,bb)
+        # et_mask = torch.zeros(batch_gpu,dense_input,bb).cuda()
+        et_mask = torch.zeros(batch_gpu,dense_input,bb)
 
         if et_mask.device == torch.device('cuda:0'):
             for i in range(batch_gpu):
@@ -68,10 +68,10 @@ class AttnDecoderRNN(nn.Module):
             for i in range(batch_gpu):
                 et_mask[i][:h_mask[i+3*batch_gpu],:w_mask[i+3*batch_gpu]]=1
 
-#         #Added
-#         for i in range(batch_gpu):
-#             et_mask[i][:h_mask[i],:w_mask[i]]=1
-#         ##
+        #Added
+        for i in range(batch_gpu):
+            et_mask[i][:h_mask[i],:w_mask[i]]=1
+        ##
 
         et_mask_4 = et_mask.unsqueeze(1)
 
@@ -99,11 +99,10 @@ class AttnDecoderRNN(nn.Module):
         attention_sum1 = self.uf(attention_sum_trans)
 
         et = hidden1 + encoder_outputs1 + attention_sum1
-        et = et.to("cuda")
-        et_trans = torch.transpose(et,2,3).to("cuda")
+        et_trans = torch.transpose(et,2,3)
         et_trans = torch.transpose(et_trans,1,2)
         et_trans = self.conv_tan(et_trans)
-        et_trans = (et_trans*et_mask_4)
+        et_trans = et_trans*et_mask_4
         et_trans = self.bn1(et_trans)
         et_trans = torch.tanh(et_trans)
         et_trans = torch.transpose(et_trans,1,2)
@@ -121,7 +120,7 @@ class AttnDecoderRNN(nn.Module):
 
         # et_div_all is attention alpha
         et_div_all = torch.zeros(batch_gpu,1,dense_input,bb)
-        et_div_all = et_div_all.cuda()
+        # et_div_all = et_div_all.cuda()
 
         et_exp = torch.exp(et)
         et_exp = et_exp*et_mask
@@ -156,4 +155,5 @@ class AttnDecoderRNN(nn.Module):
 
     def initHidden(self,batch_size):
         result = Variable(torch.randn(batch_size, 1, self.hidden_size))
+        return result
         return result.cuda()

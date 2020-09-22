@@ -24,14 +24,13 @@ channels=1
 
 sentNum=0
 
-scpFile=open('C:\\Users\\FredQ\\CS121\\Pytorch-Handwritten-Mathematical-Expression-Recognition\\train_caption.txt')
+scpFile=open('C:\\Users\\FredQ\\CS121\\Pytorch-Handwritten-Mathematical-Expression-Recognition\\test_caption.txt')
 while 1:
     line=scpFile.readline().strip() # remove the '\r\n'
     if not line:
         break
     else:
         key = line.split('\t')[0]
-        # print(key)
         image_file = image_path + key + '_' + str(0) + '.bmp'
         im = imread(image_file)
         mat = numpy.zeros([channels, im.shape[0], im.shape[1]], dtype='uint8')
